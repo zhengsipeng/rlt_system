@@ -46,7 +46,7 @@ You can use multiple datasets to extend your object detection dataset
 -- VIDOR
 ---- It is saved in 'data/vidor' with PASCAL VOC format
 ```
-You can see more information about vidvrd and vidor in 'data/data_format'
+You can see more information about vidvrd and vidor in 'data/data_format' and there is a data processing script 'process.py' under 'data' dir.
 
 
 ## Data Preparation
