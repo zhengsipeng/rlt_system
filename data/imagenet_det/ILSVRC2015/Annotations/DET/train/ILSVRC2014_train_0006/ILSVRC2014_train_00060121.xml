@@ -1,0 +1,20 @@
+<annotation>
+	<folder>ILSVRC2014_train_0006</folder>
+	<filename>ILSVRC2014_train_00060121</filename>
+	<source>
+		<database>ILSVRC_2014</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>333</height>
+	</size>
+	<object>
+		<name>n03916031</name>
+		<bndbox>
+			<xmin>76</xmin>
+			<xmax>499</xmax>
+			<ymin>101</ymin>
+			<ymax>217</ymax>
+		</bndbox>
+	</object>
+</annotation>

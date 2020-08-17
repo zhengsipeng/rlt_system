@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>None</folder>
+	<filename>660</filename>
+	<source>
+		<dataset>vidvrd</dataset>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>0</trackid>
+		<name>dog</name>
+		<bndbox>
+			<xmin>890</xmin>
+			<ymin>261</ymin>
+			<xmax>1118</xmax>
+			<ymax>517</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>1</trackid>
+		<name>antelope</name>
+		<bndbox>
+			<xmin>330</xmin>
+			<ymin>113</ymin>
+			<xmax>689</xmax>
+			<ymax>471</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

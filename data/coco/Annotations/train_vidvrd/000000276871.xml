@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>train2017</folder>
+	<filename>276871</filename>
+	<source>
+		<dataset>vidvrd</dataset>
+	</source>
+	<size>
+		<width>640</width>
+		<height>457</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>-1</trackid>
+		<name>dog</name>
+		<bndbox>
+			<xmin>7.36</xmin>
+			<ymin>69.05</ymin>
+			<xmax>590.33</xmax>
+			<ymax>362.38</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>train2017</folder>
+	<filename>498967</filename>
+	<source>
+		<dataset>vidor</dataset>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>-1</trackid>
+		<name>cellphone</name>
+		<bndbox>
+			<xmin>117.7</xmin>
+			<ymin>301.27</ymin>
+			<xmax>138.82</xmax>
+			<ymax>311.56</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>-1</trackid>
+		<name>cellphone</name>
+		<bndbox>
+			<xmin>449.65</xmin>
+			<ymin>299.8</ymin>
+			<xmax>496.09</xmax>
+			<ymax>319.28000000000003</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>None</folder>
+	<filename>12</filename>
+	<source>
+		<dataset>vidvrd</dataset>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>0</trackid>
+		<name>giant_panda</name>
+		<bndbox>
+			<xmin>0</xmin>
+			<ymin>115</ymin>
+			<xmax>609</xmax>
+			<ymax>593</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>1</trackid>
+		<name>giant_panda</name>
+		<bndbox>
+			<xmin>814</xmin>
+			<ymin>266</ymin>
+			<xmax>1169</xmax>
+			<ymax>568</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

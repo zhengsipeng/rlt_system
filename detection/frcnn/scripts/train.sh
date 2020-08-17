@@ -1,5 +1,5 @@
 CUDA_VISIBLE_DEVICES=1,2,3,4,5 python -m frcnn.scripts.train \
---dataset vidor_d1 \
+--dataset vidor_ext \
 --net res101 \
 --epochs 20 \
 --save_dir frcnn/models \

@@ -1,0 +1,18 @@
+# VidOR
+num_of_videos: 10,000(7,000 train / 835 val / 2,165 test)
+object: 80
+predicate: 50(42 action / 8 spatial)
+annotated object: > 50000
+annotated relation instances: 380,000
+
+
+# VidVRD
+num_of_videos: 1,000(800 train / 200 test)
+object: 35
+predicate: 132
+relation triplet 2,961 train; 1,011 test
+visual relation instance: 4,835 test
+
+video length: most in 3~93s
+*56.34% human object; 35.78% animal object; 7.98 others
+*76.77% spatial predicate; 23.23% action predicate

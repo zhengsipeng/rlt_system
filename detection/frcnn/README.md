@@ -1,7 +1,7 @@
 # Faster RCNN Object Detection Model
 ## File Structure
 ``` txt
--- detection
+-- detection/frcnn
 ---- cfgs
 ---- model
 ---- scripts
@@ -11,6 +11,10 @@
 ---- pretrained_model
 ------ resnet101_caffe.pth
 ```
+
+The pretrained_model can be downloaded from:
+
+https://pan.baidu.com/s/19wtPLBZHnHE6re_C0ka5EA, code: ubyb
 
 ## Prerequisites
 The code is ran under python 3.7 and pytorch 1.0.0.
@@ -49,15 +53,16 @@ You can see more information about vidvrd and vidor in 'data/data_format'
 I place all training data under 'data' dir, the data format of follows PASCAL VOC format, which is formulated as:
 ```
 -- Annotations
----- imgid1.xml
----- imgid2.xml
+---- /predir/imgid1.xml
+---- /predir/imgid2.xml
 -- ImageSets
 ---- Main
 ------ train.txt
 ------ val.txt
+------ test.txt
 -- JPEGImages
----- imgid1.jpg
----- imgid2.jpg
+---- /predir/imgid1.jpg
+---- /predir/imgid2.jpg
 ---- ...
 ```
 If you are not familiar with PASCAL VOC format, Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, creat softlinks in the folder data/. I strongly recommond you to validate the code under PASCAL VOC dataset.
@@ -83,9 +88,9 @@ Download them and put them into the 'data/pretrained_model/'.
 
 Before training, set the right directory to save and load the trained models. Change the arguments "save_dir" and "load_dir" in train.py and eval.py to adapt to your environment.
 
-To train a faster R-CNN model with res101 on pascal_voc, run the following command out of the 'object_detection' dir:
+To train a faster R-CNN model with res101 on pascal_voc, run the following command under the 'detection' dir:
 ```
-bash object_detection/scripts/train.sh
+bash frcnn/scripts/train.sh
 ```
 you can set some training settings in 'train.sh', and some is important
 ```
@@ -109,6 +114,12 @@ I add a new script for evaluation with batchsize > 1, you can run by:
 ```
 bash frcnn/scripts/eval_batch.sh
 ```
+
+Pretrained models for VidOR and VidVRD has been provided, the mAP is 0.37 (vidor_ext, 80 categories) and 0.674 (VidVRD):
+
+https://pan.baidu.com/s/19wtPLBZHnHE6re_C0ka5EA, code:ubyb
+
+You should place the pratrained model under 'frcnn/models/res101/vidor/...' or 'frcnn/models/res101/vidvrd/...'
 
 ## Demo
 [TODO]

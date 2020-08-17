@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>None</folder>
+	<filename>294</filename>
+	<source>
+		<dataset>vidvrd</dataset>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+</annotation>

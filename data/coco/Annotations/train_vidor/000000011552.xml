@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>train2017</folder>
+	<filename>011552</filename>
+	<source>
+		<dataset>vidor</dataset>
+	</source>
+	<size>
+		<width>640</width>
+		<height>427</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>-1</trackid>
+		<name>bear</name>
+		<bndbox>
+			<xmin>249.48</xmin>
+			<ymin>157.07</ymin>
+			<xmax>414.53</xmax>
+			<ymax>248.23</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

@@ -127,6 +127,7 @@ if __name__ == '__main__':
     load_name = os.path.join(input_dir,
         'faster_rcnn_{}_{}_{}.pth'.format(args.checksession, args.checkepoch, args.checkpoint))
     if 'd1' in args.dataset:
+        # only evaluate human class
         vidor_classes = np.asarray(['__background__', 'adult', 'child', 'baby'])
         det_file = 'output/res101/faster_rcnn_10/detections_d1.pkl'
         with open('data/vidor/vidor_split/ImageSets/Main/val_d1.txt', 'r') as f:
@@ -134,6 +135,7 @@ if __name__ == '__main__':
         batch_list_file = 'output/res101/vald1_batch_list.pkl'
         args.imdbval_name = 'vidor_2020_d1val'
     elif 'd2' in args.dataset:
+        # evaluate object
         vidor_classes = np.asarray(['__background__',
                             'bread', 'cake', 'dish', 'fruits', 'vegetables', 'backpack', 'camera',
                             'cellphone', 'handbag', 'laptop', 'suitcase', 'ball/sports_ball',
@@ -155,6 +157,7 @@ if __name__ == '__main__':
         batch_list_file = 'output/res101/vald2_batch_list.pkl'
         args.imdbval_name = 'vidor_2020_d2val'
     else:
+        # 80 classes evaluation
         vidor_classes = np.asarray(['__background__',
                             'bread', 'cake', 'dish', 'fruits', 'vegetables', 'backpack', 'camera',
                             'cellphone', 'handbag', 'laptop', 'suitcase', 'ball/sports_ball',
@@ -172,19 +175,20 @@ if __name__ == '__main__':
                             ])
         
         if not 'test' in args.dataset:
+            # validation set
             det_file = 'output/res101/vidor_2020_val/faster_rcnn_10/detections.pkl'
             with open('data/vidor/ImageSets/Main/val.txt', 'r') as f:
                 imglist = [im.strip() for im in f.readlines()]
             batch_list_file = 'output/res101/val_batch_list.pkl'
             args.imdbval_name = 'vidor_2020_val'
         else:
+            # test set
             # there are 3 position need to be correct
             det_file = 'output/res101/vidor_2020_test/faster_rcnn_10/detections.pkl'
-            with open('data/vidor/test/test_miss2.txt', 'r') as f:
+            with open('data/vidor/test/test.txt', 'r') as f:
                 imglist = [im.strip() for im in f.readlines()]
-            batch_list_file = 'output/res101/test_batch_list2.pkl'
+            batch_list_file = 'output/res101/test_batch_list.pkl'
             args.imdbval_name = 'vidor_2020_test'
-
 
     if not args.eval:
         if not args.sum:
@@ -532,7 +536,7 @@ if __name__ == '__main__':
         print('Detection loaded')
 
         print('Evaluating detections')
-        output_dir = get_output_dir(imdb, 'faster_rcnn_10_miss2')
+        output_dir = get_output_dir(imdb, 'faster_rcnn_10')
         print(output_dir)
         imdb.evaluate_detections(all_boxes, output_dir)
 

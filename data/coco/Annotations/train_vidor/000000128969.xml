@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>train2017</folder>
+	<filename>128969</filename>
+	<source>
+		<dataset>vidor</dataset>
+	</source>
+	<size>
+		<width>640</width>
+		<height>383</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>-1</trackid>
+		<name>ski</name>
+		<bndbox>
+			<xmin>387.31</xmin>
+			<ymin>304.52</ymin>
+			<xmax>437.68</xmax>
+			<ymax>345.77</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>-1</trackid>
+		<name>ski</name>
+		<bndbox>
+			<xmin>10.22</xmin>
+			<ymin>338.95</ymin>
+			<xmax>38.8</xmax>
+			<ymax>356.71</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

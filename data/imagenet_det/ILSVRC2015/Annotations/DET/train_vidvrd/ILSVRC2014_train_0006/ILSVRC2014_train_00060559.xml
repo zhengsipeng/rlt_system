@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>ILSVRC2014_train_0006</folder>
+	<filename>ILSVRC2014_train_00060559</filename>
+	<source>
+		<database>ILSVRC_2014</database>
+	</source>
+	<size>
+		<width>397</width>
+		<height>500</height>
+	</size>
+	<object>
+		<name>n02411705</name>
+		<bndbox>
+			<xmin>40</xmin>
+			<xmax>363</xmax>
+			<ymin>93</ymin>
+			<ymax>453</ymax>
+		</bndbox>
+	</object>
+</annotation>

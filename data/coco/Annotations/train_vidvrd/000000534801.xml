@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>train2017</folder>
+	<filename>534801</filename>
+	<source>
+		<dataset>vidvrd</dataset>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>-1</trackid>
+		<name>person</name>
+		<bndbox>
+			<xmin>434.38</xmin>
+			<ymin>6.08</ymin>
+			<xmax>575.91</xmax>
+			<ymax>135.67000000000002</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>-1</trackid>
+		<name>person</name>
+		<bndbox>
+			<xmin>1.68</xmin>
+			<ymin>0.62</ymin>
+			<xmax>116.48</xmax>
+			<ymax>96.55000000000001</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

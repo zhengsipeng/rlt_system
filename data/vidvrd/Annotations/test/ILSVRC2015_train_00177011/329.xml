@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<folder>None</folder>
+	<filename>329</filename>
+	<source>
+		<dataset>vidvrd</dataset>
+	</source>
+	<size>
+		<width>640</width>
+		<height>424</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<trackid>0</trackid>
+		<name>horse</name>
+		<bndbox>
+			<xmin>287</xmin>
+			<ymin>158</ymin>
+			<xmax>440</xmax>
+			<ymax>272</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>1</trackid>
+		<name>person</name>
+		<bndbox>
+			<xmin>358</xmin>
+			<ymin>121</ymin>
+			<xmax>408</xmax>
+			<ymax>206</ymax>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

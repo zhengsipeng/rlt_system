@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=4,5,6,7 python -m object_detection.eval_batch \
+CUDA_VISIBLE_DEVICES=4,5,6,7 python -m frcnn.eval_batch \
 --dataset vidor_test \
 --net res101 \
 --checksession 1 \
